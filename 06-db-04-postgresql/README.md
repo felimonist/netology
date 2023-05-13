@@ -1,13 +1,14 @@
 Задание 1.
 
 
-![slave](https://github.com/felimonist/netology/06-db-04-postgresql/blob/main/img/1.JPG)
+![slave](https://github.com/felimonist/netology/blob/main/06-db-04-postgresql/img/1.JPG)
 
-вывода списка БД
+вывода списка БД,
 подключения к БД
-![slave](https://github.com/felimonist/netology/06-db-04-postgresql/blob/main/img/1.2.JPG)
+![slave](https://github.com/felimonist/netology/blob/main/06-db-04-postgresql/img/1.2.JPG)
 
 вывод списка таблиц
+```
 postgres=# \dtS
                     List of relations
    Schema   |          Name           | Type  |  Owner   
@@ -213,22 +214,23 @@ postgres=# \dS+
 
 выход
 \q
-
+```
 
 Задание 2.
 
-![slave](https://github.com/felimonist/netology/06-db-04-postgresql/blob/main/img/2.JPG)
+![slave](https://github.com/felimonist/netology/blob/main/06-db-04-postgresql/img/2.JPG)
 
-![slave](https://github.com/felimonist/netology/06-db-04-postgresql/blob/main/img/2.1.JPG)
+![slave](https://github.com/felimonist/netology/blob/main/06-db-04-postgresql/img/2.1.JPG)
 
 Задание 3.
 
-![slave](https://github.com/felimonist/netology/06-db-04-postgresql/blob/main/img/3.JPG)
+![slave](https://github.com/felimonist/netology/blob/main/06-db-04-postgresql/img/3.JPG)
+
 Можно изначально исключить "ручное" разбиение при проектировании таблицы orders, если использовать декларативное секционирование с предложением PARTITION BY.
 
 Задание 4.
 
-![slave](https://github.com/felimonist/netology/06-db-04-postgresql/blob/main/img/4.JPG)
+![slave](https://github.com/felimonist/netology/blob/main/06-db-04-postgresql/img/4.JPG)
 
 Для уникальности значения столбца title добавим строку в бэкап
 
