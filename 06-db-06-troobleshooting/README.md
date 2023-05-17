@@ -15,8 +15,9 @@ db.currentOp({ "active" : true, "secs_running" : { "$gt" : 180 }})
     ]
 }
 ```
-2. Принудительно остановить использовать команду db.killOp()
-
+2. Принудительно остановить использовав команду db.killOp()
+ 
+Вариант решения:
 К примеру установить ограничение времени исполнения операций с помощью maxTimeMS()
 
 Задание 2.
@@ -25,7 +26,7 @@ db.currentOp({ "active" : true, "secs_running" : { "$gt" : 180 }})
 пока не выполнится очистка.
 
 
-задание 3.
+Задание 3.
 
 Причины
 
@@ -37,7 +38,7 @@ db.currentOp({ "active" : true, "secs_running" : { "$gt" : 180 }})
  1. Увеличить значение параметров : net_read_timeout , connect_timeout , max_allowed_packet , interactive_timeout , wait_timeout , net_read_timeout
  2. При исчезновение ошибки InterfaceError: (InterfaceError) 2013: Lost connection to MySQL server during query  , возвращать по одному параметры в начальное значение для поиска исходной проблемы.
 
- Задание 4.
+Задание 4.
 
 Я считаю , что Postgres недостаточно оперативной памяти.
 
