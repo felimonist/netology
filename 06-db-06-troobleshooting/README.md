@@ -1,7 +1,7 @@
 Задание 1.
 
 1. Необходимо найти opid операции:
-
+```
 db.currentOp({ "active" : true, "secs_running" : { "$gt" : 180 }})
 
 {
@@ -14,8 +14,8 @@ db.currentOp({ "active" : true, "secs_running" : { "$gt" : 180 }})
         }
     ]
 }
-
-2. Принудительно остановить использовать команду `db.killOp()`
+```
+2. Принудительно остановить использовать команду db.killOp()
 
 К примеру установить ограничение времени исполнения операций с помощью maxTimeMS()
 
@@ -34,7 +34,7 @@ db.currentOp({ "active" : true, "secs_running" : { "$gt" : 180 }})
 3. Размер сообщения/запроса превышает размер буфера max_allowed_packet на сервере или max_allowed_packet на строне клиента.
 
 Решение проблемы : 
- 1. Увеличить значение параметров : `net_read_timeout`, `connect_timeout`, `max_allowed_packet`, `interactive_timeout`, `wait_timeout`, `net_read_timeout`
+ 1. Увеличить значение параметров : net_read_timeout , connect_timeout , max_allowed_packet , interactive_timeout , wait_timeout , net_read_timeout
  2. При исчезновение ошибки InterfaceError: (InterfaceError) 2013: Lost connection to MySQL server during query  , возвращать по одному параметры в начальное значение для поиска исходной проблемы.
 
  Задание 4.
